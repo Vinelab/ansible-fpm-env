@@ -11,7 +11,7 @@ git submodule add git@github.com:Vinelab/ansible-fpm-env roles/fpm-env
 Or simply clone this repository directly into your *roles* directory:
 
 ```
-git clone git@github.com:Vinelab/ansible-fpm-env roles
+git clone git@github.com:Vinelab/ansible-fpm-env roles/fpm-env
 ```
 
 ### Usage
