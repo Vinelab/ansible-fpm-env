@@ -1,0 +1,13 @@
+---
+-   name: create environment ini file for FPM
+    file: path="{{file}}" state=touch
+    tags: fpm-env
+
+-   name: prepare the environment for the Api
+    ini_file: dest="{{file}}"
+                section="{{section}}"
+                option="env[{{item.option}}]"
+                value="{{item.value}}"
+                state=present
+    with_items: variables
+    tags: fpm-env
